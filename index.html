@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="C:\Users\a\projects\clousre\index.js"></link>
+    <script src="./index.js"></script>
+    <style>
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <button class="button" id="demo"/>
+    <button class="button" onclick="onClick()">Button</button>
+    <label/>
+    <Input type="text" onkeyup=" getData()"/>
+    <Input type="text" onkeyup="betterFunction()"/>
+
+
+    <script>
+
+var add = (function(){
+    debugger;
+              var counter = 0;
+          return function(){counter+=1; return counter}
+          document.getElementById("demo").innerHTML = counter;
+          })();
+          
+         
+        function onClick(){
+            debugger;
+        //   alert("Clicked Button");
+         
+
+          document.getElementById("demo").innerHTML = add();
+         
+
+
+        }
+
+    </script>
+</body>
+</html>
